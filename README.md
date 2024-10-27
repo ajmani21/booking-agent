@@ -1,13 +1,18 @@
 ## Steps to Set Up and Run the Application
 
-### 1. Generate Calendar Data
+### 1. Create a virtual environment with python3.11 and install necessary dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Generate Calendar Data
 Run the following command to generate calendar data using `generate_data.py`. This will create a `calendar.json` file in the data directory.
 
 ```bash
 python generate_data.py
 ```
 
-### 2. Run the chainlit UI to interact with the agent
+### 3. Run the chainlit UI to interact with the agent
 
 ```bash
 chainlit run main.py
