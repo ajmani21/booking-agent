@@ -65,7 +65,7 @@ def book_appointment(date_str, slot_start_times):
             slot["available"] = False
             booking_status[slot["start"]] = True
         updated_slots.append(slot)
-    
+
     if all(booking_status.values()):
         calendar_data[date_str] = updated_slots
         with open("data/calendar.json", "w") as f:

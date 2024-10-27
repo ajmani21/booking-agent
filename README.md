@@ -5,14 +5,17 @@
 pip install -r requirements.txt
 ```
 
-### 2. Generate Calendar Data
+### 2. Clone .env_example and create .env file with the values for required environment variables
+
+
+### 3. Generate Calendar Data
 Run the following command to generate calendar data using `generate_data.py`. This will create a `calendar.json` file in the data directory.
 
 ```bash
 python generate_data.py
 ```
 
-### 3. Run the chainlit UI to interact with the agent
+### 4. Run the chainlit UI to interact with the agent
 
 ```bash
 chainlit run main.py
